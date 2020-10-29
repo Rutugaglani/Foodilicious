@@ -1,12 +1,13 @@
 const express = require('express');
 const mysql = require('mysql');
-
+var cors = require('cors')
 const dotenv = require("dotenv");
 const cookieParser = require("cookie-parser");
 const app=express();
 dotenv.config({ path:'./.env'});
 
 // Create connection
+app.use(cors())
 
 const db = mysql.createConnection({
     

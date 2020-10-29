@@ -8,5 +8,7 @@ const router = express.Router();
 router.post('/register',authController.register);
 router.post('/login',authController.login);
 router.get('/subCategory/:id',dataController.subCategory);
+router.get('/subCatList/:id',dataController.subCatList);
+router.get('/restaurantInfo/:id/:locId',dataController.restaurantInfo);
 
 module.exports = router; 

@@ -22,9 +22,10 @@ exports.subCategory = (req,res)=>{
     })
     
 }
-/*exports.restaurantInfo = (req,res)=>{
+exports.restaurantInfo = (req,res)=>{
     const id=req.params.id
-       db.query(`SELECT * FROM restaurant WHERE category_id = ${id}`, async(error,response)=>{
+    const locId=req.params.locId
+       db.query(`SELECT * FROM restaurant,restaurantaddress AS restAdd WHERE restaurant_id = ${id} AND restAdd.id = ${locId} `, async(error,response)=>{
            if(error){
                console.log(error);
            }
@@ -35,4 +36,18 @@ exports.subCategory = (req,res)=>{
            
        })
        
-   }*/
+   }
+   exports.subCatList = (req,res)=>{
+    const id=req.params.id
+       db.query(`SELECT Distinct name,rating,type FROM fallunder as FU,restaurant as rest ,restaurantaddress as RA WHERE subcategory_id = ${id} AND FU.restaurant_id=rest.restaurant_id   `, async(error,response)=>{
+           if(error){
+               console.log(error);
+           }
+           else
+           {  
+               return res.status(200).json(response);
+           }
+           
+       })
+       
+   }
