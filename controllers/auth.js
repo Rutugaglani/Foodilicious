@@ -183,7 +183,7 @@ exports.updateCustomerAddress=(req,res)=>{
 exports.insertCustomerAddress=(req,res)=>{
     const {address,city,pincode,user_id}=req.body;
  
-    db.query(`insert into customer(user_id,address,city,pincode) values(${user_id},"${address}","${city}",${pincode}`,async (err,result) => {
+    db.query(`insert into customer(user_id,address,city,pincode) values(${user_id},"${address}","${city}",${pincode})`,async (err,result) => {
         if(err) {
             console.log(err);
         }
