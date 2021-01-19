@@ -154,20 +154,6 @@ exports.getVegMenu = (req, res) => {
 exports.updateQuantity = (req, res) => {
   const { user_id, food_id, quantity, restaurant_id } = req.body;
 
-  /* if(quantity == 0)
-    {
-            db.query(`DELETE FROM cart WHERE user_id=${user_id} AND restaurant_id=${restaurant_id} AND food_id=${food_id}`,async(err,result) => {
-                try{
-                    console.log(quantity,food_id,restaurant_id,user_id)
-                 return res.status(200).json({message : "Item Deleted !!"});
-                }
-         catch
-         {
-             console.log(err)
-        }
-    })
-}*/
-
   db.query(
     `update cart set quantity=${quantity} ,cost = (select ${quantity}*price from fooditem where id=${food_id}) 
     where user_id=${user_id} AND restaurant_id=${restaurant_id} AND food_id =${food_id}`,
@@ -250,21 +236,9 @@ exports.getFoodItem = (req, res) => {
 
 //Place Order
 exports.placeOrder = (req, res) => {
-  const { restaurant_id, user_id } = req.body;
+  const { restaurant_id, user_id, loc_id } = req.body;
   db.query(
-    `select food_id from cart where  user_id=${user_id} and restaurant_id=${restaurant_id}`,
-    async (err, result) => {
-      try {
-        if (result.length > 0) res.status(200).json(result);
-        else res.status(200).json({ message: "item doesnt exist in cart" });
-      } catch {
-        console.log(err);
-      }
-    }
-  );
-
-  db.query(
-    `insert into orders (cost, restaurant_id, user_id) values((select sum(cost) from cart where user_id=${user_id}), ${restaurant_id}, ${user_id})`,
+    `insert into orders (cost, restaurant_id, user_id,loc_id) values((select sum(cost) from cart where user_id=${user_id}), ${restaurant_id}, ${user_id},${loc_id})`,
     async (err, result) => {
       if (err) console.log(err);
       else res.status(200).json(result);
@@ -272,29 +246,7 @@ exports.placeOrder = (req, res) => {
   );
 };
 
-//add_Present_in_an
-exports.presentInAn = (req, res) => {
-  const { restaurant_id, user_id } = req.body;
-  db.query(
-    `select food_id from cart where  user_id=${user_id} and restaurant_id=${restaurant_id}`,
-    async (err, result) => {
-      try {
-        if (result.length > 0) res.status(200).json(result);
-        else res.status(200).json({ message: "item doesnt exist in cart" });
-      } catch {
-        console.log(err);
-      }
-    }
-  );
 
-  db.query(
-    `insert into orders (cost, restaurant_id, user_id) values((select sum(cost) from cart where user_id=${user_id}), ${restaurant_id}, ${user_id})`,
-    async (err, result) => {
-      if (err) console.log(err);
-      else res.status(200).json(result);
-    }
-  );
-};
 
 exports.updateOrder = (req, res) => {
   const { restaurant_id, user_id, order_id } = req.body;
@@ -309,9 +261,9 @@ exports.updateOrder = (req, res) => {
 
 //Get Order
 exports.getCurrentOrder = (req, res) => {
-  const { restaurant_id, user_id } = req.params;
+  const { restaurant_id, user_id, loc_id } = req.params;
   db.query(
-    `select * from orders where  user_id=${user_id} AND statusOrder=0 AND restaurant_id=${restaurant_id}`,
+    `select * from orders where  user_id=${user_id} AND loc_id=${loc_id} AND statusOrder=0 AND restaurant_id=${restaurant_id}`,
     async (err, result) => {
       if (err) console.log(err);
       else res.status(200).json(result);
@@ -322,7 +274,6 @@ exports.getCurrentOrder = (req, res) => {
 //Payment
 exports.payment = (req, res) => {
   const { payment_method, order_id } = req.body;
-
   db.query(
     `insert into payment (payment_method,order_id) values(${payment_method},${order_id})`,
     async (err, result) => {
@@ -349,13 +300,58 @@ exports.payment = (req, res) => {
 };
 
 exports.deleteCart = (req, res) => {
-  const { user_id, restaurant_id } = req.body;
+  const { user_id, restaurant_id, order_id } = req.body;
+  console.log(user_id, restaurant_id, order_id)
   db.query(
-    `DELETE FROM cart WHERE user_id=${user_id} AND restaurant_id=${restaurant_id} `,
+    `select * from cart where user_id=${user_id} AND restaurant_id=${restaurant_id}`,
+    async (error, response) => {
+      try {
+        console.log(response)
+        response.map((item) => {
+          db.query(
+            `insert into presentinan(food_id,order_id,quantity) values(${item.food_id},${order_id},${item.quantity})`,
+            async (erro, res2) => {
+              try {
+                console.log(res2);
+                db.query(
+                  `DELETE FROM cart WHERE user_id=${user_id} AND restaurant_id=${restaurant_id} `,
+                  async (err, result) => {
+                    try {
+                      console.log(restaurant_id, user_id);
+                      return res
+                        .status(200)
+                        .json({ message: "Item Deleted !!" });
+                    } catch {
+                      console.log(err);
+                    }
+                  }
+                );
+              }
+              catch{
+                console.log(erro)
+              }
+            }
+          );
+        });
+      }
+      catch{
+        console.log(error)
+      }
+    }
+  );
+};
+
+exports.getPresentInAn = (req, res) => {
+  const { order_id } = req.params;
+  db.query(
+    `select * from presentinan join fooditem on presentinan.food_id = fooditem.id join orders on presentinan.order_id = orders.id  where order_id=${order_id}`,
     async (err, result) => {
       try {
-        console.log(restaurant_id, user_id);
-        return res.status(200).json({ message: "Item Deleted !!" });
+        if (result.length > 0) {
+          return res.status(200).json(result);
+        } else {
+          return res.status(200).json({ message: "cart is empty" });
+        }
       } catch {
         console.log(err);
       }

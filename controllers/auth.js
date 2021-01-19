@@ -192,4 +192,17 @@ exports.insertCustomerAddress=(req,res)=>{
         }
     })
 }
+exports.getUserOrders=(req,res)=>{
+    const {user_id}=req.params;
+ 
+    db.query(`select orders.id,orders.cost,orders.statusOrder,orders.date,orders.user_id,orders.restaurant_id,restaurant.name,restaurantaddress.id as loc_id from users join orders on orders.user_id=${user_id} and orders.user_id=users.id
+     join restaurant on restaurant.restaurant_id=orders.restaurant_id join restaurantaddress on restaurantaddress.id=orders.loc_id`,async (err,result) => {
+        if(err) {
+            console.log(err);
+        }
+        else {
+            res.status(200).json(result);
+        }
+    })
+}
 
