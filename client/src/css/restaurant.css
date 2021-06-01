@@ -1,0 +1,139 @@
+.restaurant_jumbotron {
+  background-image: url("https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  max-height: 70vh !important;
+  padding: 2% 10% 10% 10% !important;
+}
+.rest_brandName {
+  color: #fff;
+  text-align: center;
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 2px !important;
+}
+.restaurant_jumbotron > h2 {
+  color: #fff;
+  text-align: center;
+}
+.main_homeNav {
+  padding-bottom: 10% !important;
+}
+.restaurant_search {
+  height: 50px !important;
+  border: 1px solid #fff !important;
+}
+.restaurant_iconSearch {
+  background-color: #fff !important;
+  border: 1px solid #fff !important;
+}
+.rest_collectionImg {
+  width: 100% !important;
+  border-radius: 5px !important;
+  height: 100%;
+  opacity: 0.8;
+}
+.rest_collectionCol {
+  position: relative;
+  margin-bottom: 5% !important;
+  height: 350px !important;
+  cursor: pointer;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.05) 60%,
+    rgba(0, 0, 0, 0.05) 85%
+  );
+}
+.rest_collectionSpan {
+  position: absolute;
+  bottom: 3% !important;
+  left: 10% !important;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+}
+.rest_collectionSpan > p {
+  margin-bottom: 1px !important;
+  letter-spacing: 1px !important;
+}
+.main_collName {
+  font-weight: 500;
+  font-size: 20px !important;
+  letter-spacing: 1px !important;
+  color: #fff !important;
+}
+.main_mainCollDes {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.main_mainCollName {
+  letter-spacing: 1px;
+  margin-top: 3%;
+  font-weight: 700 !important;
+}
+.main_mainTypeName {
+  letter-spacing: 1px;
+  margin-top: 3%;
+  font-weight: 500 !important;
+}
+.main_SubName {
+  color: #828282 !important;
+  font-size: 18px;
+  font-weight: 400;
+  margin-right: 1%;
+}
+
+.main_subIcon {
+  color: #828282 !important;
+  font-size: 7px;
+  margin: 2px 10px;
+  margin-right: 2%;
+}
+
+.navbar_restOpt {
+  color: #fff !important;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  letter-spacing: 1px !important;
+}
+/*Cuisine*/
+.rest_cuisineRow
+{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 3%;
+}
+.rest_cuisineCol
+{
+ 
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(232, 232, 232);
+    margin-bottom: 1.5rem;
+    margin-right: 1rem;
+  text-align: center;
+    box-shadow: rgba(28, 28, 28, 0.08) 0px 1.42623px 2.85246px;
+    font-size: 1.5rem;
+}
+.main_cuisName
+{
+  font-size: 23px;
+  color: #828282 !important
+}
+.main_mainCuisineName
+{
+  text-align: center;
+}
+.main_TypeOptName
+{
+  margin-top: 2%;
+}
+.main_partDiv
+{
+  margin-top: 10%;
+}

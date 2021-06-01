@@ -1,0 +1,68 @@
+* {
+  font-family: "Fira Sans", sans-serif;
+}
+.collectionInfo_jumboImg {
+  position: absolute;
+  max-width: 100%;
+  width: 100%;
+  height: 100% !important;
+  object-fit: cover;
+  overflow: hidden;
+  object-position: center;
+}
+.collectionInfo_jumboImg4 {
+  object-position: bottom !important;
+}
+.collectionInfo_jumbo {
+  width: 100% !important;
+  height: 350px !important;
+  margin: 5% auto !important;
+  position: relative;
+}
+.collectionMain_text {
+  position: absolute;
+  bottom: 15% !important;
+  color: #fff;
+  margin-left: 1%;
+}
+.collectionInfo_colName {
+  font-weight: 500;
+  font-size: 3rem !important;
+  letter-spacing: 1px;
+}
+
+.collectInfo_name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 1px !important;
+  margin-top: 3px !important;
+  letter-spacing: 1px !important;
+  cursor: pointer;
+}
+.collectInfo_img {
+  width: 100% !important;
+  height: 70% !important;
+  border-radius: 5px !important;
+  cursor: pointer;
+}
+.collectInfo_Col {
+  padding: 1% !important;
+}
+.collectInfo_Star {
+  background-color: #ce0808;
+  padding: 2px;
+  color: #fff;
+}
+.collectInfo_rating {
+  margin-bottom: 1px !important;
+  font-weight: 600;
+}
+.collectInfo_location {
+  margin-bottom: 1px !important;
+}
+.cuisineInfo_CuiName {
+  color: #616161;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 5%;
+}

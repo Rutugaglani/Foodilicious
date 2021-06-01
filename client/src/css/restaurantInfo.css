@@ -1,0 +1,77 @@
+* {
+  font-family: "Fira Sans", sans-serif;
+}
+.restInfo_name {
+  letter-spacing: 1px;
+}
+.restInfo_type {
+  color: #9e9e9e;
+  letter-spacing: 1px;
+}
+.restInfo_opt {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #9e9e9e;
+  padding-bottom: 2px !important;
+}
+.restInfo_btnOpt {
+  background-color: #fff;
+  border: #fff;
+  /*border-bottom: 2px solid #9E9E9E;*/
+  font-size: 22px;
+  color: rgb(105, 105, 105);
+}
+.restInfo_btnOpt:active,
+.restInfo_btnOpt:hover,
+.restInfo_btnOpt:focus {
+  background-color: #fff !important;
+  border: #fff !important;
+  /*border-bottom: 2px solid #9E9E9E;*/
+  font-size: 22px;
+  color: #ed5a6b;
+  outline: 0px !important;
+}
+.restIfo_timeSpan {
+  color: #ed5a6b;
+}
+.restInfo_mainthumb {
+  width: 100% !important;
+  height: 400px;
+}
+.restInfo_container {
+  margin: 2% auto !important;
+}
+
+.restInfo_cuisine {
+  display: -webkit-inline-box;
+}
+.restInfo_popularDish {
+  display: -webkit-inline-box;
+}
+.restInfo_subHead {
+  font-size: 20px !important;
+  margin-bottom: 5px !important;
+}
+.restInfo_content {
+  font-weight: 300;
+  color: #4f4f4f;
+}
+.restInfo_disclaimer {
+  font-size: 15px;
+  line-height: 1.5;
+  color: rgb(156, 156, 156);
+  margin: 0px;
+}
+.restInfo_how {
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgb(156, 156, 156);
+  margin: 0px;
+  border-bottom: 1px dotted rgb(156, 156, 156);
+  width: fit-content;
+  font-weight: 300;
+}
+
+.noMarginBtm {
+  margin-bottom: 1px !important;
+}

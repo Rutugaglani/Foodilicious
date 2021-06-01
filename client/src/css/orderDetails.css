@@ -1,0 +1,44 @@
+.ordets_container
+{
+    margin-top: 5%;
+}
+.ordets_ordNo
+{
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.ordets_ordDate
+{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.ordets_ordetsDets {
+    padding: 1.5rem;
+    border: 0.1rem solid rgb(232, 232, 232);
+    border-radius: 2rem;
+    margin-bottom: 1%;
+    background: rgb(255, 255, 255);
+    display: inline-grid;
+    width: 100%;
+    grid-template-columns: 8% 72% 20%;
+  }
+  .ordets_Veg {
+    color: rgb(80, 181, 71);
+    border: 1px solid rgb(80, 181, 71);
+    padding: 2px;
+    margin-right: 3px;
+  } 
+  .ordets_Non-Veg {
+    color: #8b0000;
+    border: 1px solid #8b0000;
+    padding: 2px;
+    margin-right: 3px;
+  }
+  .ordets_ordetsDetName {
+    margin-bottom: 2px !important;
+  }
+  .ordets_ordetsDetQty {
+    margin-bottom: 2px !important;
+  }

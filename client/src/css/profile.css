@@ -1,0 +1,146 @@
+.payDets_deliveryDiv,.payDets_orderDiv,
+.payDets_paymentDiv {
+  padding: 1.2rem 2.4rem;
+  width: 100%;
+  border: 0.1rem solid rgb(232, 232, 232);
+  border-radius: 0.8rem;
+  margin-bottom: 1.5rem;
+  margin-top: 5%;
+}
+.payDets_deliveryActDiv,
+.payDets_paymentActDiv {
+  padding: 1.2rem 2.4rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 16px;
+  width: 100%;
+  border: 0.1rem solid rgb(232, 232, 232);
+  border-radius: 0.8rem;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  height: inherit;
+}
+.payDets_delBtnDiv {
+  display: flex;
+  justify-content: flex-end;
+}
+.payDets_delBtn, .payDets_addBtn {
+  margin-right: 1% !important ;
+  background-color: #ed5a6b !important;
+  border: 1px solid #ed5a6b !important;
+  letter-spacing: 1px !important;
+}
+.payDets_textBox {
+  margin-bottom: 1%;
+}
+
+
+.compDets_emptyStar {
+    color: #d1d2d3;
+    padding: 5px;
+    font-size: 30px;
+  }
+  .compDets_yellowStar {
+    color: #f1c217;
+    padding: 5px;
+    font-size: 30px;
+  }
+  .compDets_starSize {
+    font-size: 30px;
+    color: #d1d2d3;
+  }
+  .compDets_rating .dv-star-rating-empty-star {
+    color: #d1d2d3 !important;
+  }
+  
+  .compDets_Feedback,
+  .compDets_Question {
+    margin-top: 5%;
+  }
+  .compDets_QuesContainer,
+  .compDets_feedbackContainer {
+    position: relative;
+  }
+  .compDets_feedbackImageCol img ,.compDets_questionImageCol img {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+  }
+  
+  .compDets_feedbackDisplay,
+  .compDets_questionDisplay {
+    background-color: #f6f7f8;
+    padding-top: 10px;
+    margin-top: 2%;
+  }
+  
+  .compDets_feedbackNameCol,
+  .compDets_questionNameCol {
+    display: -webkit-inline-box;
+    font-size: 18px;
+  }
+  .compDets_feedbackNameCol .compDets_feedbackDate,
+  .compDets_questionNameCol .compDets_questionDate {
+    padding-left: 5%;
+    padding-top: 1%;
+    font-size: 12px !important; 
+    color: #484848;
+  }
+  .compDets_feedbackReveiwCol,
+  .compDets_questionReveiwCol {
+    font-size: 20px;
+  }
+  
+  .compDets_reviewSubmitted p {
+    background-color: #ed5a6b3b;
+    font-size: 2rem;
+    text-align: center;
+    padding: 50px;
+    margin: 5% auto;
+  }
+  .compDets_questionDisplayContainer {
+    margin: 5% auto;
+  }
+
+  .profile_name
+  {
+    margin-top: 2rem;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+  .profile_email
+  {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+  .payDets_orderNoDiv
+  {
+    display:flex;
+    justify-content: space-between;
+  }
+  .payDets_orderDiv {
+    padding: 1.2rem 2.4rem;
+    width: 100%;
+    border: 0.1rem solid rgb(232, 232, 232);
+    border-radius: 0.8rem;
+    margin-bottom: 1.5rem;
+    margin-top: 2%;
+
+  }
+  .payDets_orderMainDiv
+  {
+    margin-top: 5% !important;
+  }
+  .profile_orderBtnDiv
+  {
+    display:flex;
+    width:100%;
+    justify-content: flex-end;
+   
+  }
+  .profile_orderBtn
+  {
+
+    background-color: #ed5a6b !important;
+    border: 1px solid #ed5a6b !important;
+    letter-spacing: 1px !important;
+  }

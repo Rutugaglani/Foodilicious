@@ -1,0 +1,259 @@
+.login_main {
+  background-color: #fff;
+  margin-top: 10% !important;
+}
+.login_logo_div {
+  position: relative;
+  display: flex !important;
+  justify-content: flex-start;
+  margin-left: 4%;
+  margin-top: 2%;
+}
+.login_logo {
+  width: 15% !important;
+}
+
+  .login_brandName {
+    color:  #ed5a6b !important;
+
+    text-align: center;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 2px !important;
+  }
+
+
+.login_header,
+.signup_header {
+  color: #ed5a6b !important;
+  margin-bottom: 5%;
+  text-align: center;
+  font-weight: 300 !important;
+  font-family: "Poppins", sans-serif;
+}
+.login_header > span {
+  font-weight: 700;
+}
+.login_inputMain,
+.login_inputError {
+  width: 60% !important;
+  margin: auto;
+  border-radius: 3rem;
+}
+.login_inputMain:focus,
+.login_inputMain:active,
+.login_inputMain:hover {
+  border: 1.5px solid #ed5a6b !important;
+  border-radius: 3rem;
+}
+.login_inputError {
+  border: 1.5px solid red !important;
+}
+.login_iconInput {
+  border-radius: 3rem !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  background-color: #f5f5f5 !important;
+  border: 1px solid #f5f5f5 !important;
+  color: #ed5a6b !important ;
+}
+
+.login_input {
+  border-radius: 3rem !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  color: #ed5a6b !important;
+  border: 1px solid #f5f5f5 !important;
+  background-color: #f5f5f5 !important;
+}
+.login_input:focus {
+  border: 1px solid #f5f5f5 !important;
+  border-left: 0px !important;
+  box-shadow: none !important;
+  background-color: #f5f5f5 !important;
+}
+
+.forgot_password {
+  margin-right: 20%;
+  text-align: right;
+  font-size: 15px;
+  margin-top: 1%;
+  text-transform: capitalize !important;
+  font-weight: 600;
+  color: #616161;
+  font-family: "Poppins", sans-serif;
+}
+.login_loginBtn {
+  border-radius: 3rem !important;
+  padding: 1% 8% !important;
+  display: flex !important;
+  margin: auto;
+  font-family: "Poppins", sans-serif !important;
+  letter-spacing: 1px !important;
+  font-weight: 600 !important;
+  background-color: #ed5a6b !important;
+  border: 1px solid #ed5a6b !important;
+}
+.login_connect {
+  margin-top: 3%;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #616161;
+}
+
+.login_signup {
+  margin-top: 3%;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #616161;
+}
+.login_signup > a > span {
+  font-weight: 700;
+  color: #ed5a6b !important;
+}
+.login_socialMedia {
+  display: flex;
+  justify-content: center;
+}
+.login_socialMediaBtn {
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 1% 5% !important;
+  font-family: "Poppins", sans-serif;
+}
+.login_socialMedia > #Facebook {
+  background-color: #3b5998;
+  border: 1px solid #3b5998;
+  width: 20% !important;
+}
+
+.login_socialMedia > #Google {
+  background-color: #db4a39;
+  border: 1px solid #db4a39;
+  width: 20% !important;
+}
+.login_socialMedia > #Facebook:hover,
+.login_socialMedia > #Google:hover,
+.login_loginBtn:hover {
+  transform: scale(1.1);
+}
+.login_socialMedia > #Facebook:focus,
+.login_socialMedia > #Facebook:active,
+.login_socialMedia > #Google:focus,
+.login_socialMedia > #Google:active,
+.login_loginBtn:active,
+.login_loginBtn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.login_socialMediaIcon {
+  margin-right: 5px !important;
+  font-size: 20px !important;
+}
+.login_alert {
+  margin: 1% auto;
+  text-align: center;
+  width: 50%;
+}
+.login_errIcon {
+  margin-right: 1%;
+}
+/*Signup*/
+.signup_quick {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #616161;
+}
+.signup_header {
+  margin-bottom: 1% !important;
+}
+.signup_input,
+.signup_inputName,
+.signup_inputNameError,
+.signup_inputError {
+  border-radius: 3rem !important;
+  color: #ed5a6b !important;
+  border: 1px solid #f5f5f5 !important;
+  background-color: #f5f5f5 !important;
+  margin: auto;
+}
+.signup_input,
+.signup_inputName {
+  margin-bottom: 1rem !important;
+}
+.signup_input,
+.signup_inputError {
+  width: 60% !important;
+}
+.signup_inputName,
+.signup_inputNameError {
+  width: 60% !important;
+}
+.signup_inputNameError,
+.signup_inputError {
+  border: 1.5px solid red !important;
+  box-shadow: none !important;
+  background-color: #f5f5f5 !important;
+  margin-bottom: 1px !important;
+}
+.signup_input:focus,
+.signup_input:hover,
+.signup_inputName:focus,
+.signup_inputName:hover {
+  border: 1.5px solid #ed5a6b !important;
+  box-shadow: none !important;
+  background-color: #f5f5f5 !important;
+}
+#signup_colF {
+  margin-right: 0px;
+}
+#signup_colL {
+  margin-left: 0px;
+}
+.signup_checkbox {
+  text-align: -webkit-center;
+}
+.signup_checkbox > label {
+  font-family: "Poppins", sans-serif;
+  color: #616161;
+}
+.signup_inputRadio {
+  margin-top: 2%;
+  margin-left: 21%;
+  display: -webkit-inline-box;
+}
+.signup_inputRadio > .genderP {
+  font-family: "Poppins", sans-serif !important;
+  color: #616161 !important;
+}
+
+.signup_checkRadio > label {
+  font-family: "Poppins", sans-serif !important;
+  color: #616161 !important;
+}
+.signupErrorP {
+  color: red;
+  text-align: center;
+  margin-bottom: 5px !important;
+}
+#signupErrorPName {
+  color: red;
+  text-align: left;
+  margin-bottom: 5px !important;
+  margin-left: 2%;
+}
+#signupErrorRadio {
+  color: red !important;
+  margin-left: 2%;
+}
+.signup_formgroup {
+  margin-bottom: 1px !important;
+}
+
+@media (max-width: 575px) {
+  #signup_colF,
+  #signup_colL {
+    margin: auto !important;
+    margin-bottom: 1rem !important;
+  }
+}

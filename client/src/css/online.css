@@ -1,0 +1,50 @@
+.online_thumbpic {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 5%;
+}
+.online_des {
+  font-weight: 300;
+  color: rgb(105, 105, 105);
+  margin-bottom: 2px !important;
+}
+.online_imgDiv {
+  height: 10rem !important;
+  width: 13rem !important;
+}
+.online_foodDesMain {
+  margin-top: 2% !important;
+}
+.onlineInfo_container {
+  overflow-y: scroll;
+  height: 60vh;
+}
+.online_proceedMainDiv {
+  background-color: #ed5a6b;
+  padding: 1% 2% 0% 2%;
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+}
+
+.online_proceedP {
+  margin-bottom: 0% !important;
+  font-size: 25px;
+  color: #fff;
+}
+.online_arrowRight {
+  font-size: 3rem;
+  color: #fff;
+}
+.online_AddIcon {
+  border-radius: 50% 0px 0px 50% !important;
+  background-color: #ed5a6b !important;
+  border: 1px solid #ed5a6b !important;
+}
+.online_MinusIcon {
+  border-radius: 0px 50% 50% 0px !important;
+  background-color: #ed5a6b !important;
+  border: 1px solid #ed5a6b !important;
+}

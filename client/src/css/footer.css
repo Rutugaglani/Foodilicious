@@ -1,0 +1,29 @@
+.FooterMainDiv
+{
+    background-color: #F5F5F5;
+    padding: 3%;
+    bottom: 0 !important;
+    margin-top: 10%;
+}
+.footerSub
+{
+    margin-top: 2%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.footerOpt
+{
+    margin-bottom: 3px;
+    font-weight: 300;
+    cursor:pointer;
+}
+.footer2
+{
+    margin-top: 5%;
+}
+.footer_icon
+{
+    font-size: 1.5rem;
+    margin: 1%;
+    cursor: pointer;
+}
