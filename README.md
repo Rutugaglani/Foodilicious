@@ -69,7 +69,7 @@ collaboration space for the restaurants where they can share their menus that th
 
 <h4>Images:</h4>
 <b>Home Page</b>
-<h3 align="center"><img src="Tourizto Images/homepage.png" height=auto width=75%></h3>
+<h3 align="center"><img src="images/Home.png" height=auto width=75%></h3>
 
 <b>About page</b>
 
