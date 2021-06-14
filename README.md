@@ -69,49 +69,32 @@ collaboration space for the restaurants where they can share their menus that th
 
 <h4>Images:</h4>
 <b>Login</b>
-<h3 align="center"><img src="images/login.png" height=auto width=75%></h3>
+<h3 align="center"><img src="images/login.png" height=auto width=100%></h3>
 <b>Signup</b>
-<h3 align="center"><img src="images/signup.png" height=auto width=75%></h3>
+<h3 align="center"><img src="images/signup.png" height=auto width=100%></h3>
 <b>Home Page</b>
-<h3 align="center"><img src="images/Home.png" height=auto width=75%></h3>
+<h3 align="center"><img src="images/Home.png" height=auto width=100%></h3>
 
 <b>Collection's Page</b>
 
-<h3 align="center"><img src="images/collections.png" height=auto width=75%></h3>
+<h3 align="center"><img src="images/collections.png" height=auto width=100%></h3>
 
 <b>Restaurant Overview page</b>
 
-<h3 align="center"><img src="images/overview.png" height=auto width=75%></h3>
+<h3 align="center"><img src="images/overview.png" height=auto width=100%></h3>
 
 <b>Order Online page</b>
 
-<h3 align="center"><img src="images/orderOnline.png" height=auto width=75%></h3>
+<h3 align="center"><img src="images/orderOnline.png" height=auto width=100%></h3>
 
-<b>Booking and Payment</b>
+<b>Restaurant Review Page</b>
 
-<h3 align="center"><img src="Tourizto Images/booking.png" height=auto width=75%></h3>
-<h3 align="center"><img src="Tourizto Images/checkout.png" height=auto width=75%></h3>
-<h3 align="center"><img src="Tourizto Images/payment.png" height=auto width=75%></h3>
-<h3 align="center"><img src="Tourizto Images/email.png" height=auto width=75%></h3>
-<h3 align="center"><img src="Tourizto Images/gmail.png" height=auto width=75%></h3>
+<h3 align="center"><img src="images/restReview.png" height=auto width=100%></h3>
 
-<b>My Bookings</b>
+<b>Payment</b>
 
-<h3 align="center"><img src="Tourizto Images/mybookings.png" height=auto width=75%></h3>
-
-<b>Travelouge</b>
-
-<h3 align="center"><img src="Tourizto Images/travelouge.png" height=auto width=75%></h3>
-<h3 align="center"><img src="Tourizto Images/blog.png" height=auto width=75%></h3>
-
-<b>Review</b>
-
-<h3 align="center"><img src="Tourizto Images/review.png" height=auto width=75%></h3>
+<h3 align="center"><img src="images/payment.png" height=auto width=100%></h3>
 
 <b>Profile</b>
 
-<h3 align="center"><img src="Tourizto Images/profile.png" height=auto width=75%></h3>
-
-<b>Chatbot</b>
-
-<h3 align="center"><img src="Tourizto Images/chatbot.png" height=auto width=75%></h3>
+<h3 align="center"><img src="images/profile.png" height=auto width=100%></h3>
