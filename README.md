@@ -68,20 +68,24 @@ collaboration space for the restaurants where they can share their menus that th
 </table>
 
 <h4>Images:</h4>
+<b>Login</b>
+<h3 align="center"><img src="images/login.png" height=auto width=75%></h3>
+<b>Signup</b>
+<h3 align="center"><img src="images/signup.png" height=auto width=75%></h3>
 <b>Home Page</b>
 <h3 align="center"><img src="images/Home.png" height=auto width=75%></h3>
 
-<b>About page</b>
+<b>Collection's Page</b>
 
-<h3 align="center"><img src="Tourizto Images/about.png" height=auto width=75%></h3>
+<h3 align="center"><img src="images/collections.png" height=auto width=75%></h3>
 
-<b>Contact page</b>
+<b>Restaurant Overview page</b>
 
-<h3 align="center"><img src="Tourizto Images/contact.png" height=auto width=75%></h3>
+<h3 align="center"><img src="images/overview.png" height=auto width=75%></h3>
 
-<b>Itenierary</b>
+<b>Order Online page</b>
 
-<h3 align="center"><img src="Tourizto Images/itenary.png" height=auto width=75%></h3>
+<h3 align="center"><img src="images/orderOnline.png" height=auto width=75%></h3>
 
 <b>Booking and Payment</b>
 
