@@ -1,4 +1,4 @@
-<h3 align="center"><img src="Tourizto Images/brand.png" height=50 width=auto></h3>
+<h3 align="center"><img src="images/brand.png" height=50 width=auto></h3>
 <h3 align="center">WD-DBMS Semester-V Mini Project</h3>
 <h4>Team</h5>
 <ul>
